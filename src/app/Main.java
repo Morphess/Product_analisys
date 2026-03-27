@@ -20,7 +20,7 @@ public class Main {
                 new Product("Cheese", "Food", 120.0)
         );
 
-        //групування за категоріями
+        //grouping by categories
         Map<String, List<Product>> groupedProducts = products.stream()
                 .collect(Collectors.groupingBy(Product::getCategory));
         System.out.println("Products, groups in category: ");
