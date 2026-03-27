@@ -29,7 +29,7 @@ public class Main {
         });
         System.out.println();
 
-        //average expensive in each categ.
+        //average expensive in each category
         Map<String, Double> averagePrices = products.stream()
                 .collect(Collectors.groupingBy(
                         Product::getCategory,
